@@ -1,0 +1,25 @@
+{
+  "name": "mock-mock-fs",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/mock-mock-fs.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "coverage": "jest --coverage",
+    "lint": "eslint . && prettier --check '**/*.js'",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-pretty-standard": "^2.0.1",
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^23.0.0",
+    "prettier": "^1.16.4",
+    "unexpected": "^11.0.1"
+  }
+}
