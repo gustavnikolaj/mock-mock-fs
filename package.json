@@ -21,6 +21,7 @@
     "fs-extra": "^7.0.1",
     "jest": "^23.0.0",
     "prettier": "^1.16.4",
+    "rimraf": "^2.6.3",
     "unexpected": "^11.0.1"
   }
 }

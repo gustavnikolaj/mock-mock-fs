@@ -1,23 +1,16 @@
-# mock-mock-fs
-
-Example with mocha as a test runner.
-
-```js
-// convert-file-to-upper-case.js
 const fs = require("fs");
 
 function convertFileToUpperCase(path) {
   const content = fs.readFileSync(path, "utf-8");
-  fs.writeFileSync(content.toUpperCase(), "utf-8");
+  fs.writeFileSync(path, content.toUpperCase(), "utf-8");
 }
 
-// convert-file-to-upper-case.spec.js
 const rimraf = require("rimraf");
 const expect = require("unexpected");
 const path = require("path");
-const fs = require("fs");
+const mockMockFs = require("../");
 
-const testFolderPath = path.resolve(__dirname, "__test-tmp__");
+const testFolderPath = path.resolve(__dirname, "../__tmp__");
 
 describe("convertFileToUpperCase", () => {
   beforeEach(() => {
@@ -41,4 +34,3 @@ describe("convertFileToUpperCase", () => {
     expect(fs.readFileSync(testFilePath, "utf-8"), "to equal", "FOOBAR");
   });
 });
-```
