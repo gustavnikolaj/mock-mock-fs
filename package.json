@@ -1,5 +1,5 @@
 {
-  "name": "mock-mock-fs",
+  "name": "@gustavnikolaj/mock-mock-fs",
   "version": "0.0.0",
   "description": "",
   "main": "lib/mock-mock-fs.js",
